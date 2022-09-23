@@ -1,0 +1,33 @@
+.container {
+  margin-top: 100px;
+  background: rgb(117, 255, 241);
+  background: linear-gradient(0deg, rgb(117, 255, 241) 6%, rgb(34, 193, 195) 100%);
+  border-radius: 10px;
+  text-align: center;
+}
+.container .search-bar {
+  padding-top: 20px;
+  position: relative;
+}
+.container .search-bar::after {
+  text-align: center;
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: white;
+  bottom: 0;
+  margin: auto;
+}
+.container .search-bar input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+}
+.container .search-bar input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=index.css.map */
