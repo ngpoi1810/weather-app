@@ -21,6 +21,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/all.min.js"></script>
+    <script src="./js/moment.js"></script>
   </head>
   <body>
     <div class="container">
@@ -40,6 +41,7 @@
           src="http://openweathermap.org/img/wn/10d@2x.png"
           alt="weather icon"
           title="weather icon"
+          class="weather-icon"
         />
         <p class="temperature">26</p>
       </section>
@@ -48,25 +50,27 @@
           <div class="col">
             <div class="item">
               <div class="label">MT Mọc</div>
-              <div class="value">6:16</div>
+              <div class="value sunrise">6:16</div>
             </div>
             <div class="item">
               <div class="label">Độ ẩm</div>
-              <div class="value">73%</div>
+              <div class="value"><span class="humidity">73</span>%</div>
             </div>
           </div>
           <div class="col">
             <div class="item">
               <div class="label">MT lặn</div>
-              <div class="value">17:57</div>
+              <div class="value sunset">17:57</div>
             </div>
             <div class="item">
               <div class="label">Gió</div>
-              <div class="value">5.54 km/h</div>
+              <div class="value "><span class="wind-speed">5.54</span> km/h</div>
             </div>
           </div>
         </div>
       </section>
     </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
